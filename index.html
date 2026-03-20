@@ -31,6 +31,9 @@
 
   <script src="https://cdn.tailwindcss.com"></script>
   
+  <!-- ANIMACIONES AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
   <!-- ENLACES RELATIVOS PARA FUNCIONAR LOCALMENTE -->
   <link rel="stylesheet" href="css/styles.css"> 
   <script src="js/animations.js" defer></script>
@@ -108,11 +111,11 @@
   <!-- SERVICIOS SECCION -->
   <section id="servicios" class="bg-white py-20 px-4"> 
     <div class="max-w-screen-xl mx-auto">
-      <h2 class="text-3xl md:text-4xl font-extrabold text-center text-indigo-700 mb-16" data-editable="true">Nuestros Servicios Destacados</h2> 
+      <h2 class="text-3xl md:text-4xl font-extrabold text-center text-indigo-700 mb-16" data-aos="fade-up" data-editable="true">Nuestros Servicios Destacados</h2> 
       
       <div class="grid grid-cols-1 md:grid-cols-3 gap-10"> 
         
-        <div class="bg-white p-8 rounded-xl shadow-xl hover:shadow-2xl border-t-4 border-indigo-500 hover:border-indigo-600 transition duration-500">
+        <div data-aos="fade-up" data-aos-delay="100" class="bg-white p-8 rounded-xl shadow-xl hover:shadow-2xl border-t-4 border-indigo-500 hover:border-indigo-600 transition duration-500">
           <h3 class="text-2xl font-bold text-indigo-700 mb-4" data-editable="true">Asesoría Contable</h3>
           <p class="text-gray-600 mb-4" data-editable="true">Mantén tus libros al día con precisión. Nos encargamos de registrar y analizar tus finanzas para que dediques tu tiempo a crecer tu negocio.</p>
           
@@ -125,7 +128,7 @@
           </ul>
         </div>
         
-        <div class="bg-white p-8 rounded-xl shadow-xl hover:shadow-2xl border-t-4 border-indigo-500 hover:border-indigo-600 transition duration-500">
+        <div data-aos="fade-up" data-aos-delay="200" class="bg-white p-8 rounded-xl shadow-xl hover:shadow-2xl border-t-4 border-indigo-500 hover:border-indigo-600 transition duration-500">
           <h3 class="text-2xl font-bold text-indigo-700 mb-4" data-editable="true">Asesoría Tributaria</h3>
           <p class="text-gray-600 mb-4" data-editable="true">Cumple con el SII sin pagar de más. Optimizamos tu carga tributaria aprovechando los beneficios de la norma legal vigente.</p>
           
@@ -138,7 +141,7 @@
           </ul>
         </div>
         
-        <div class="bg-white p-8 rounded-xl shadow-xl hover:shadow-2xl border-t-4 border-indigo-500 hover:border-indigo-600 transition duration-500">
+        <div data-aos="fade-up" data-aos-delay="300" class="bg-white p-8 rounded-xl shadow-xl hover:shadow-2xl border-t-4 border-indigo-500 hover:border-indigo-600 transition duration-500">
           <h3 class="text-2xl font-bold text-indigo-700 mb-4" data-editable="true">Servicios Personales</h3>
           <p class="text-gray-600 mb-4" data-editable="true">Soluciones hechas a medida para profesionales independientes que quieran tener completa claridad sobre sus aportes e ingresos.</p>
           
@@ -155,6 +158,51 @@
     </div>
   </section>
   
+  <!-- FAQ SECCION -->
+  <section id="faq" class="bg-white py-20 px-4 border-t border-gray-100">
+    <div class="max-w-3xl mx-auto" data-aos="fade-up">
+      <h2 class="text-3xl md:text-4xl font-extrabold text-center text-indigo-700 mb-10" data-editable="true">Preguntas Frecuentes</h2>
+      <div class="space-y-4">
+        <!-- Pregunta 1 -->
+        <details class="group bg-gray-50 rounded-xl p-6 cursor-pointer border border-transparent shadow-sm hover:border-indigo-200 transition duration-300">
+          <summary class="flex justify-between items-center font-bold text-lg text-gray-800 list-none">
+            <span data-editable="true">¿Cuáles son las fechas clave de la Operación Renta?</span>
+            <span class="transition group-open:rotate-180 text-indigo-600">
+              <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+            </span>
+          </summary>
+          <p class="text-gray-600 mt-4 leading-relaxed" data-editable="true">
+            La Operación Renta en Chile se realiza de forma anual en abril. Sin embargo, para que este proceso sea impecable, la preparación documentada de tus balances debe iniciar antes del cierre comercial de diciembre. Nosotros nos encargamos de todo este orden.
+          </p>
+        </details>
+        <!-- Pregunta 2 -->
+        <details class="group bg-gray-50 rounded-xl p-6 cursor-pointer border border-transparent shadow-sm hover:border-indigo-200 transition duration-300">
+          <summary class="flex justify-between items-center font-bold text-lg text-gray-800 list-none">
+            <span data-editable="true">¿Qué incluye el servicio mensual para Pymes?</span>
+            <span class="transition group-open:rotate-180 text-indigo-600">
+              <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+            </span>
+          </summary>
+          <p class="text-gray-600 mt-4 leading-relaxed" data-editable="true">
+            Nuestro servicio contable mensual abarca la declaración mensual de impuestos (F29), la liquidación de remuneraciones, el cálculo de cotizaciones previsionales de tus trabajadores, y la entrega mensual de informes de flujo para que tomes mejores decisiones.
+          </p>
+        </details>
+        <!-- Pregunta 3 -->
+        <details class="group bg-gray-50 rounded-xl p-6 cursor-pointer border border-transparent shadow-sm hover:border-indigo-200 transition duration-300">
+          <summary class="flex justify-between items-center font-bold text-lg text-gray-800 list-none">
+            <span data-editable="true">¿Ofrecen ayuda con el Inicio de Actividades ante el SII?</span>
+            <span class="transition group-open:rotate-180 text-indigo-600">
+              <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+            </span>
+          </summary>
+          <p class="text-gray-600 mt-4 leading-relaxed" data-editable="true">
+            ¡Totalmente! Si recién vas a emprender, te asesoramos en la constitución de tu empresa (Empresa en un Día), la obtención de tu RUT, acreditación de domicilio y el correcto inicio de actividades comerciales con el régimen tributario que más te beneficie.
+          </p>
+        </details>
+      </div>
+    </div>
+  </section>
+
 <!-- CONTACTO SECCION -->
 
   <section id="contacto" class="bg-indigo-50 py-24 px-4"> 
@@ -164,7 +212,7 @@
         Escríbeme para concretar una reunión donde hablemos del crecimiento de tu empresa.
       </p>
       
-      <form method="POST" action="mailto:correo@ejemplo.com" class="space-y-6 p-8 bg-white rounded-xl shadow-xl border border-gray-100">
+      <form data-aos="fade-up" data-aos-delay="100" method="POST" action="mailto:correo@ejemplo.com" class="space-y-6 p-8 bg-white rounded-xl shadow-xl border border-gray-100">
         <div>
           <label for="nombre" class="block text-sm font-bold text-gray-700 mb-2">Nombre Completo</label>
           <input type="text" id="nombre" name="nombre" required class="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-4 focus:ring-indigo-100 focus:border-indigo-500 transition duration-200" placeholder="Ej: Juan Pérez" />
@@ -195,5 +243,25 @@
       <p class="text-gray-500">Diseño y desarrollo con ❤️ y Tailwind CSS.</p>
     </div>
   </footer>
+
+  <!-- BOTÓN FLOTANTE WHATSAPP -->
+  <a href="https://wa.me/56900000000?text=Hola,%20me%20gustaría%20cotizar%20asesoría%20contable" target="_blank" class="fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-2xl hover:bg-green-600 hover:scale-110 transition-transform duration-300 z-50 flex items-center justify-center group">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="currentColor" viewBox="0 0 24 24">
+      <path d="M11.996 0C5.371 0 0 5.373 0 12.001c0 2.126.549 4.167 1.597 5.99L.085 24l6.16-1.616C7.996 23.36 10.003 24 11.996 24 18.623 24 24 18.627 24 12.001 24 5.373 18.623 0 11.996 0zm0 21.984c-1.897 0-3.753-.51-5.38-1.47l-.387-.23-3.996 1.047 1.066-3.896-.252-.4A9.919 9.919 0 011.996 12 10.012 10.012 0 0111.996 1.996 10.012 10.012 0 0122.002 12c0 5.514-4.488 9.984-10.006 9.984zm5.501-7.53c-.302-.152-1.785-.881-2.062-.981-.277-.1-.478-.152-.679.152-.201.302-.782.981-.958 1.182-.176.202-.352.227-.654.076-1.802-.911-3.235-2.585-3.82-3.585-.176-.303.021-.453.161-.6.282-.295.539-.773.539-1.076 0-.302-.15-.566-.301-.869-.453-1.057-.803-2.197-.803-3.003 0-.756.126-1.45.679-1.997.238-.237.514-.298.678-.298.163 0 .328.005.474.005.201 0 .528-.076.804.53.277.606.905 2.221.98 2.373.076.152.126.328.026.53-.101.202-.151.328-.302.505-.15.177-.327.404-.452.53-.151.152-.313.315-.126.643.187.327.83 1.375 1.784 2.225 1.233 1.099 2.26 1.442 2.587 1.594.326.152.513.125.714-.077.201-.202.868-1.009 1.107-1.354.239-.346.478-.288.755-.137.276.152 1.745.823 2.046.974.302.152.502.227.578.353.076.126.076.732-.226 1.439z"/>
+    </svg>
+    <span class="absolute right-14 whitespace-nowrap bg-white text-gray-800 text-sm font-bold py-2 px-4 rounded-xl shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+      ¡Escríbeme por WhatsApp!
+    </span>
+  </a>
+
+  <!-- SCRIPTS ANIMACIONES -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      once: true,
+      offset: 50,
+      duration: 800,
+    });
+  </script>
 </body>
 </html>
