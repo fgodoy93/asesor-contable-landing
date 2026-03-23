@@ -352,7 +352,7 @@
       </div>
 
       <div class="max-w-screen-xl mx-auto relative z-10">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+        <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-16 items-start">
 
           <!-- CALENDARIO TRIBUTARIO -->
           <div data-aos="fade-right">
@@ -460,7 +460,7 @@
           </div>
 
           <!-- CALCULADORA DE HONORARIOS -->
-          <div data-aos="fade-left">
+          <div data-aos="fade-right">
             <h2 class="text-3xl md:text-5xl font-extrabold text-brand-950 mb-6">Simulador <span
                 class="text-brand-600">Honorarios</span> 2026</h2>
             <p class="text-lg text-slate-600 mb-10">Calcula tu sueldo líquido o bruto según la nueva retención del
@@ -520,7 +520,67 @@
             </div>
           </div>
 
+          <!-- CALCULADORA DE IVA -->
+          <div data-aos="fade-left">
+            <h2 class="text-3xl md:text-5xl font-extrabold text-brand-950 mb-6">Calculadora <span
+                class="text-emerald-600">IVA</span> 19%</h2>
+            <p class="text-lg text-slate-600 mb-10">Calcula rápidamente el IVA, monto neto o total de tus facturas.</p>
+
+            <div
+              class="bg-white p-10 rounded-[2.5rem] shadow-2xl shadow-emerald-100/20 border-2 border-emerald-50 relative overflow-hidden">
+              <div class="absolute top-0 right-0 p-6 opacity-10 text-emerald-900">
+                <i data-lucide="receipt" class="w-24 h-24"></i>
+              </div>
+
+              <!-- Toggle IVA -->
+              <div class="flex items-center justify-center gap-4 mb-10">
+                <span class="text-sm font-bold text-emerald-900" id="lbl-neto">Ingresar Neto</span>
+                <label class="relative inline-flex items-center cursor-pointer">
+                  <input type="checkbox" id="iva-toggle" class="sr-only peer" onchange="updateIVAType()">
+                  <div
+                    class="w-14 h-8 bg-slate-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[4px] after:left-[4px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-6 after:w-6 after:transition-all peer-checked:bg-emerald-600">
+                  </div>
+                </label>
+                <span class="text-sm font-bold text-slate-400" id="lbl-total">Ingresar Total</span>
+              </div>
+
+              <div class="space-y-8">
+                <div>
+                  <label class="block text-sm font-bold text-slate-700 mb-3" id="input-label-iva">Monto Neto (CLP)</label>
+                  <div class="relative">
+                    <span class="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400 font-bold">$</span>
+                    <input type="number" id="monto-iva-input" placeholder="Ej: 100.000" oninput="calculateIVA()"
+                      class="w-full p-5 pl-10 bg-slate-50 border-2 border-slate-50 rounded-2xl focus:outline-none focus:border-emerald-500 focus:bg-white transition-all text-xl font-bold text-brand-950 shadow-inner">
+                  </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div class="bg-emerald-50 p-6 rounded-2xl">
+                    <span class="block text-sm font-bold text-emerald-700 mb-1" id="res-lbl-uno">Monto Neto</span>
+                    <span class="text-2xl font-black text-emerald-900" id="res-iva-uno">$ 0</span>
+                  </div>
+                  <div class="bg-brand-50 p-6 rounded-2xl">
+                    <span class="block text-sm font-bold text-brand-700 mb-1">IVA (19%)</span>
+                    <span class="text-2xl font-black text-brand-900" id="res-iva-dos">$ 0</span>
+                  </div>
+                </div>
+
+                <div class="bg-emerald-600 p-8 rounded-3xl text-center text-white shadow-xl shadow-emerald-100">
+                  <span class="block text-sm font-bold text-emerald-200 uppercase tracking-widest mb-2" id="res-lbl-total">Monto Total Estimado</span>
+                  <span class="text-4xl font-black" id="res-iva-total">$ 0</span>
+                </div>
+
+                <p class="text-[10px] text-slate-400 text-center leading-tight">
+                  Tasa de IVA vigente en Chile (19%). <br>
+                  Cálculo aproximado para efectos de planificación comercial.
+                </p>
+              </div>
+            </div>
+          </div>
+
         </div>
+      </div>
+    </section>
       </div>
     </section>
     <section id="faq" class="bg-gray-50 py-24 px-6 border-t border-gray-100">
@@ -856,6 +916,62 @@
     }
 
     window.calculateHonorarios = calculateHonorarios;
+
+    // IVA Logic
+    function updateIVAType() {
+      const isTotal = document.getElementById('iva-toggle').checked;
+      const lblNeto = document.getElementById('lbl-neto');
+      const lblTotal = document.getElementById('lbl-total');
+      const inputLabel = document.getElementById('input-label-iva');
+      const resLblUno = document.getElementById('res-lbl-uno');
+      const resLblTotal = document.getElementById('res-lbl-total');
+
+      if (isTotal) {
+        lblTotal.classList.remove('text-slate-400');
+        lblTotal.classList.add('text-emerald-900');
+        lblNeto.classList.remove('text-emerald-900');
+        lblNeto.classList.add('text-slate-400');
+        inputLabel.innerText = "Monto Total (IVA Incluido)";
+        resLblUno.innerText = "Monto Neto Estimado";
+        resLblTotal.innerText = "Monto Total Inyectado";
+      } else {
+        lblNeto.classList.remove('text-slate-400');
+        lblNeto.classList.add('text-emerald-900');
+        lblTotal.classList.remove('text-emerald-900');
+        lblTotal.classList.add('text-slate-400');
+        inputLabel.innerText = "Monto Neto (CLP)";
+        resLblUno.innerText = "Monto Neto";
+        resLblTotal.innerText = "Monto Total Estimado";
+      }
+      calculateIVA();
+    }
+
+    window.updateIVAType = updateIVAType;
+
+    function calculateIVA() {
+      const input = document.getElementById('monto-iva-input').value || 0;
+      const isTotal = document.getElementById('iva-toggle').checked;
+
+      let neto = 0;
+      let iva = 0;
+      let total = 0;
+
+      if (isTotal) {
+        total = parseInt(input);
+        neto = Math.round(total / 1.19);
+        iva = total - neto;
+      } else {
+        neto = parseInt(input);
+        iva = Math.round(neto * 0.19);
+        total = neto + iva;
+      }
+
+      document.getElementById('res-iva-uno').innerText = `$ ${neto.toLocaleString('es-CL')}`;
+      document.getElementById('res-iva-dos').innerText = `$ ${iva.toLocaleString('es-CL')}`;
+      document.getElementById('res-iva-total').innerText = `$ ${total.toLocaleString('es-CL')}`;
+    }
+
+    window.calculateIVA = calculateIVA;
   </script>
 </body>
 
