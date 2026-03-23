@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Herramientas Tributarias | Simuladores y Calculadoras | Asesora Contable</title>
+
+  <!-- SEO METADATA -->
+  <meta name="description"
+    content="Accede a nuestras herramientas gratuitas: Calendario Tributario 2026, Simulador de Boletas de Honorarios y Calculadora de IVA 19%.">
+  <meta name="author" content="Daniela Godoy">
+  <meta name="theme-color" content="#4338ca">
+  <link rel="canonical" href="https://asesorcontable.cl/herramientas.html">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#f5f7ff',
+              100: '#ebf0fe',
+              200: '#dae3fd',
+              300: '#bbccfb',
+              400: '#91aafa',
+              500: '#647df6',
+              600: '#485bed',
+              700: '#3a47da',
+              800: '#343cab',
+              900: '#2e3788',
+              950: '#1c1f51',
+            },
+            accent: {
+              emerald: '#10b981',
+              slate: '#475569',
+            }
+          },
+          fontFamily: {
+            sans: ['Outfit', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- GOOGLE FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- LUCIDE ICONS -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- ANIMACIONES AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+  <!-- HEADER SECCION -->
+  <header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-100 shadow-sm">
+    <div class="max-w-screen-xl mx-auto px-6 py-4 flex flex-row justify-between items-center">
+      <a href="index.html" class="flex items-center gap-2">
+        <div
+          class="w-10 h-10 bg-brand-600 rounded-lg flex items-center justify-center text-white shadow-lg shadow-brand-200">
+          <i data-lucide="calculator" class="w-6 h-6"></i>
+        </div>
+        <div class="text-xl font-extrabold text-brand-900 tracking-tight">ASESORA <span
+            class="text-brand-600 font-normal">CONTABLE</span></div>
+      </a>
+      <nav class="hidden md:flex items-center space-x-8">
+        <a href="index.html#servicios"
+          class="text-slate-600 hover:text-brand-600 font-semibold transition-colors duration-200">Servicios</a>
+        <a href="nosotros.html"
+          class="text-slate-600 hover:text-brand-600 font-semibold transition-colors duration-200">Nosotros</a>
+        <a href="herramientas.html"
+          class="text-brand-600 font-semibold transition-colors duration-200">Herramientas</a>
+        <a href="index.html#faq"
+          class="text-slate-600 hover:text-brand-600 font-semibold transition-colors duration-200">Preguntas</a>
+        <a href="index.html#contacto"
+          class="px-5 py-2.5 bg-brand-600 text-white font-bold rounded-lg shadow-md shadow-brand-100 hover:bg-brand-700 hover:shadow-lg transition-all duration-200 transform hover:-translate-y-0.5">
+          Contacto
+        </a>
+      </nav>
+      <!-- Mobile Menu Button -->
+      <button class="md:hidden text-slate-600">
+        <i data-lucide="menu" class="w-6 h-6"></i>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO TOOLS -->
+    <section class="py-20 bg-white border-b border-gray-100">
+      <div class="max-w-screen-xl mx-auto px-6 text-center">
+        <div class="inline-flex items-center gap-2 px-4 py-2 bg-brand-50 text-brand-700 rounded-full text-sm font-bold mb-6">
+          <i data-lucide="wrench" class="w-4 h-4"></i> Recursos Gratuitos
+        </div>
+        <h1 class="text-4xl md:text-6xl font-black text-brand-950 mb-6 leading-tight">
+          Herramientas <span class="text-brand-600">Tributarias</span>
+        </h1>
+        <p class="text-xl text-slate-600 max-w-2xl mx-auto leading-relaxed">
+          Simuladores y calculadoras diseñadas para facilitar la gestión contable de emprendedores y profesionales independientes en Chile.
+        </p>
+      </div>
+    </section>
+
+    <!-- VALOR AGREGADO: CALENDARIO Y CALCULADORA -->
+    <section id="herramientas" class="py-24 px-6 bg-slate-50 relative overflow-hidden">
+      <!-- Background highlights -->
+      <div
+        class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-brand-100/30 rounded-full blur-3xl pointer-events-none">
+      </div>
+
+      <div class="max-w-screen-xl mx-auto relative z-10">
+        <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-16 items-start">
+
+          <!-- CALENDARIO TRIBUTARIO -->
+          <div data-aos="fade-right">
+            <h2 class="text-3xl md:text-5xl font-extrabold text-brand-950 mb-6">Calendario <span
+                class="text-brand-600">Tributario</span> 2026</h2>
+            <p class="text-lg text-slate-600 mb-10">Mantente al día con las fechas críticas del SII para evitar multas
+              innecesarias.</p>
+
+            <div class="bg-white p-8 rounded-[2.5rem] shadow-xl shadow-slate-200/50 border border-slate-100">
+              <!-- Tabs -->
+              <div class="flex gap-2 mb-8 p-1.5 bg-slate-50 rounded-2xl">
+                <button onclick="switchTab('mensual')" id="tab-mensual"
+                  class="flex-1 py-3 px-6 text-sm font-bold rounded-xl transition-all duration-300 bg-white text-brand-600 shadow-sm">Impuestos
+                  Mensuales</button>
+                <button onclick="switchTab('anual')" id="tab-anual"
+                  class="flex-1 py-3 px-6 text-sm font-bold rounded-xl transition-all duration-300 text-slate-500 hover:text-brand-600">Eventos
+                  Anuales</button>
+              </div>
+
+              <!-- Mensual Timeline -->
+              <div id="content-mensual" class="space-y-6">
+                <div class="flex gap-4 group">
+                  <div class="flex flex-col items-center">
+                    <div
+                      class="w-10 h-10 bg-brand-100 rounded-full flex items-center justify-center text-brand-600 group-hover:bg-brand-600 group-hover:text-white transition-colors duration-300">
+                      <span class="text-sm font-bold">12</span>
+                    </div>
+                    <div class="w-0.5 h-full bg-slate-100"></div>
+                  </div>
+                  <div class="pb-6">
+                    <h4 class="font-bold text-slate-900 mb-1">Declaración F29 (Papel)</h4>
+                    <p class="text-sm text-slate-500">Último plazo para declarar en formulario físico por ventanilla.
+                    </p>
+                  </div>
+                </div>
+                <div class="flex gap-4 group">
+                  <div class="flex flex-col items-center">
+                    <div
+                      class="w-10 h-10 bg-brand-100 rounded-full flex items-center justify-center text-brand-600 group-hover:bg-brand-600 group-hover:text-white transition-colors duration-300">
+                      <span class="text-sm font-bold">20</span>
+                    </div>
+                    <div class="w-0.5 h-full bg-slate-100"></div>
+                  </div>
+                  <div class="pb-6">
+                    <h4 class="font-bold text-slate-900 mb-1">F29 (Internet sin Pago)</h4>
+                    <p class="text-sm text-slate-500">Ideal para empresas digitales y agilizar devoluciones.</p>
+                  </div>
+                </div>
+                <div class="flex gap-4 group">
+                  <div class="flex flex-col items-center">
+                    <div
+                      class="w-10 h-10 bg-emerald-100 rounded-full flex items-center justify-center text-emerald-600 group-hover:bg-emerald-600 group-hover:text-white transition-colors duration-300">
+                      <i data-lucide="check" class="w-5 h-5"></i>
+                    </div>
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-slate-900 mb-1">Pago de Imposiciones (PREVIRED)</h4>
+                    <p class="text-sm text-slate-500">Hasta el día 13 de cada mes para evitar recargos de ISL.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Anual Timeline (Hidden by default) -->
+              <div id="content-anual" class="hidden space-y-6">
+                <div class="flex gap-4 group">
+                  <div class="flex flex-col items-center">
+                    <div
+                      class="w-10 h-10 bg-indigo-100 rounded-full flex items-center justify-center text-indigo-600 group-hover:bg-indigo-600 group-hover:text-white transition-colors duration-300">
+                      <span class="text-xs font-bold uppercase">Mar</span>
+                    </div>
+                    <div class="w-0.5 h-full bg-slate-100"></div>
+                  </div>
+                  <div class="pb-6">
+                    <h4 class="font-bold text-slate-900 mb-1">Declaraciones Juradas (DDJJ)</h4>
+                    <p class="text-sm text-slate-500">Preparación documental crítica antes de la Operación Renta.</p>
+                  </div>
+                </div>
+                <div class="flex gap-4 group">
+                  <div class="flex flex-col items-center">
+                    <div
+                      class="w-10 h-10 bg-brand-100 rounded-full flex items-center justify-center text-brand-600 group-hover:bg-brand-600 group-hover:text-white transition-colors duration-300">
+                      <span class="text-xs font-bold uppercase">Abr</span>
+                    </div>
+                    <div class="w-0.5 h-full bg-slate-100"></div>
+                  </div>
+                  <div class="pb-6">
+                    <h4 class="font-bold text-slate-900 mb-1">Operación Renta Anual</h4>
+                    <p class="text-sm text-slate-500">Plazo para empresas y personas para declarar sus ingresos.</p>
+                  </div>
+                </div>
+                <div class="flex gap-4 group">
+                  <div class="flex flex-col items-center">
+                    <div
+                      class="w-10 h-10 bg-emerald-100 rounded-full flex items-center justify-center text-emerald-600 group-hover:bg-emerald-600 group-hover:text-white transition-colors duration-300">
+                      <span class="text-xs font-bold uppercase">Jul</span>
+                    </div>
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-slate-900 mb-1">Pago de Patentes Municipales</h4>
+                    <p class="text-sm text-slate-500">Renovación comercial obligatoria para locales físicos.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- CALCULADORA DE HONORARIOS -->
+          <div data-aos="fade-right">
+            <h2 class="text-3xl md:text-5xl font-extrabold text-brand-950 mb-6">Simulador <span
+                class="text-brand-600">Honorarios</span> 2026</h2>
+            <p class="text-lg text-slate-600 mb-10">Calcula tu sueldo líquido o bruto según la nueva retención del
+              15.25%.</p>
+
+            <div
+              class="bg-white p-10 rounded-[2.5rem] shadow-2xl shadow-brand-100/20 border-2 border-brand-50 relative overflow-hidden">
+              <div class="absolute top-0 right-0 p-6 opacity-10">
+                <i data-lucide="calculator" class="w-24 h-24 text-brand-900"></i>
+              </div>
+
+              <!-- Toggle -->
+              <div class="flex items-center justify-center gap-4 mb-10">
+                <span class="text-sm font-bold text-slate-400" id="lbl-bruto">Ingresar Bruto</span>
+                <label class="relative inline-flex items-center cursor-pointer">
+                  <input type="checkbox" id="calc-toggle" class="sr-only peer" onchange="updateCalcType()">
+                  <div
+                    class="w-14 h-8 bg-slate-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[4px] after:left-[4px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-6 after:w-6 after:transition-all peer-checked:bg-brand-600">
+                  </div>
+                </label>
+                <span class="text-sm font-bold text-brand-900" id="lbl-liquido">Ingresar Líquido</span>
+              </div>
+
+              <div class="space-y-8">
+                <div>
+                  <label class="block text-sm font-bold text-slate-700 mb-3" id="input-label">Monto Deseado
+                    (CLP)</label>
+                  <div class="relative">
+                    <span class="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400 font-bold">$</span>
+                    <input type="number" id="monto-input" placeholder="Ej: 1.000.000" oninput="calculateHonorarios()"
+                      class="w-full p-5 pl-10 bg-slate-50 border-2 border-slate-50 rounded-2xl focus:outline-none focus:border-brand-500 focus:bg-white transition-all text-xl font-bold text-brand-950 shadow-inner">
+                  </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div class="bg-brand-50 p-6 rounded-2xl">
+                    <span class="block text-sm font-bold text-brand-700 mb-1">Monto Bruto</span>
+                    <span class="text-2xl font-black text-brand-900" id="res-bruto">$ 0</span>
+                  </div>
+                  <div class="bg-emerald-50 p-6 rounded-2xl">
+                    <span class="block text-sm font-bold text-emerald-700 mb-1">Retención (15.25%)</span>
+                    <span class="text-2xl font-black text-emerald-900" id="res-retencion">$ 0</span>
+                  </div>
+                </div>
+
+                <div class="bg-brand-600 p-8 rounded-3xl text-center text-white shadow-xl shadow-brand-100">
+                  <span class="block text-sm font-bold text-brand-200 uppercase tracking-widest mb-2">Total Líquido
+                    Estimado</span>
+                  <span class="text-4xl font-black" id="res-total">$ 0</span>
+                </div>
+
+                <p class="text-[10px] text-slate-400 text-center leading-tight">
+                  Valores válidos para el año comercial 2026 en Chile. <br>
+                  La retención aumenta progresivamente según la ley de previsión social.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- CALCULADORA DE IVA -->
+          <div data-aos="fade-left">
+            <h2 class="text-3xl md:text-5xl font-extrabold text-brand-950 mb-6">Calculadora <span
+                class="text-emerald-600">IVA</span> 19%</h2>
+            <p class="text-lg text-slate-600 mb-10">Calcula rápidamente el IVA, monto neto o total de tus facturas.</p>
+
+            <div
+              class="bg-white p-10 rounded-[2.5rem] shadow-2xl shadow-emerald-100/20 border-2 border-emerald-50 relative overflow-hidden">
+              <div class="absolute top-0 right-0 p-6 opacity-10 text-emerald-900">
+                <i data-lucide="receipt" class="w-24 h-24"></i>
+              </div>
+
+              <!-- Toggle IVA -->
+              <div class="flex items-center justify-center gap-4 mb-10">
+                <span class="text-sm font-bold text-emerald-900" id="lbl-neto">Ingresar Neto</span>
+                <label class="relative inline-flex items-center cursor-pointer">
+                  <input type="checkbox" id="iva-toggle" class="sr-only peer" onchange="updateIVAType()">
+                  <div
+                    class="w-14 h-8 bg-slate-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[4px] after:left-[4px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-6 after:w-6 after:transition-all peer-checked:bg-emerald-600">
+                  </div>
+                </label>
+                <span class="text-sm font-bold text-slate-400" id="lbl-total">Ingresar Total</span>
+              </div>
+
+              <div class="space-y-8">
+                <div>
+                  <label class="block text-sm font-bold text-slate-700 mb-3" id="input-label-iva">Monto Neto (CLP)</label>
+                  <div class="relative">
+                    <span class="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400 font-bold">$</span>
+                    <input type="number" id="monto-iva-input" placeholder="Ej: 100.000" oninput="calculateIVA()"
+                      class="w-full p-5 pl-10 bg-slate-50 border-2 border-slate-50 rounded-2xl focus:outline-none focus:border-emerald-500 focus:bg-white transition-all text-xl font-bold text-brand-950 shadow-inner">
+                  </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div class="bg-emerald-50 p-6 rounded-2xl">
+                    <span class="block text-sm font-bold text-emerald-700 mb-1" id="res-lbl-uno">Monto Neto</span>
+                    <span class="text-2xl font-black text-emerald-900" id="res-iva-uno">$ 0</span>
+                  </div>
+                  <div class="bg-brand-50 p-6 rounded-2xl">
+                    <span class="block text-sm font-bold text-brand-700 mb-1">IVA (19%)</span>
+                    <span class="text-2xl font-black text-brand-900" id="res-iva-dos">$ 0</span>
+                  </div>
+                </div>
+
+                <div class="bg-emerald-600 p-8 rounded-3xl text-center text-white shadow-xl shadow-emerald-100">
+                  <span class="block text-sm font-bold text-emerald-200 uppercase tracking-widest mb-2" id="res-lbl-total">Monto Total Estimado</span>
+                  <span class="text-4xl font-black" id="res-iva-total">$ 0</span>
+                </div>
+
+                <p class="text-[10px] text-slate-400 text-center leading-tight">
+                  Tasa de IVA vigente en Chile (19%). <br>
+                  Cálculo aproximado para efectos de planificación comercial.
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION CONTACT CTA -->
+    <section class="py-20 bg-brand-900 text-white overflow-hidden relative">
+      <div class="max-w-screen-xl mx-auto px-6 text-center relative z-10">
+        <h2 class="text-3xl md:text-5xl font-black mb-6">¿Necesitas una asesoría personalizada?</h2>
+        <p class="text-xl text-brand-200 mb-10 max-w-2xl mx-auto">
+          Si estas herramientas no son suficientes, agenda una llamada para resolver tus dudas específicas.
+        </p>
+        <a href="index.html#contacto" class="inline-flex items-center gap-3 px-8 py-4 bg-white text-brand-900 font-black rounded-2xl hover:bg-brand-50 transition-all duration-300 transform hover:-translate-y-1">
+          Contactar Ahora <i data-lucide="arrow-right" class="w-6 h-6"></i>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-brand-950 text-white py-12 px-6">
+    <div class="max-w-screen-xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+      <div class="flex items-center gap-2">
+        <div class="w-10 h-10 bg-brand-600 rounded-lg flex items-center justify-center text-white">
+          <i data-lucide="calculator" class="w-6 h-6"></i>
+        </div>
+        <div class="text-xl font-extrabold tracking-tight">ASESORA <span class="text-brand-600 font-normal">CONTABLE</span></div>
+      </div>
+      <div class="flex gap-8 text-sm font-bold text-brand-300">
+        <a href="index.html#servicios" class="hover:text-white transition-colors">Servicios</a>
+        <a href="nosotros.html" class="hover:text-white transition-colors">Nosotros</a>
+        <a href="herramientas.html" class="hover:text-white transition-colors">Herramientas</a>
+        <a href="index.html#contacto" class="hover:text-white transition-colors">Contacto</a>
+      </div>
+      <div class="text-sm text-brand-400">© 2026 Asesora Contable. Todos los derechos reservados.</div>
+    </div>
+  </footer>
+
+  <!-- SCRIPTS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ once: true, duration: 800 });
+    lucide.createIcons();
+
+    // Mobile Menu Toggle
+    const mobileMenuBtn = document.querySelector('button.md\\:hidden');
+    const navMenu = document.querySelector('nav.hidden');
+
+    if (mobileMenuBtn && navMenu) {
+      mobileMenuBtn.addEventListener('click', () => {
+        navMenu.classList.toggle('hidden');
+        navMenu.classList.toggle('flex');
+        navMenu.classList.toggle('flex-col');
+        navMenu.classList.toggle('absolute');
+        navMenu.classList.toggle('top-full');
+        navMenu.classList.toggle('left-0');
+        navMenu.classList.toggle('w-full');
+        navMenu.classList.toggle('bg-white');
+        navMenu.classList.toggle('p-6');
+        navMenu.classList.toggle('shadow-xl');
+        navMenu.classList.toggle('space-y-4');
+        navMenu.classList.toggle('space-x-0');
+      });
+    }
+
+    // LÓGICA DE HERRAMIENTAS INTERACTIVAS
+    const RETENCION_RATE = 0.1525; // Tasa año 2026
+
+    function switchTab(tab) {
+      const btnMensual = document.getElementById('tab-mensual');
+      const btnAnual = document.getElementById('tab-anual');
+      const contentMensual = document.getElementById('content-mensual');
+      const contentAnual = document.getElementById('content-anual');
+
+      if (tab === 'mensual') {
+        btnMensual.className = 'flex-1 py-3 px-6 text-sm font-bold rounded-xl transition-all duration-300 bg-white text-brand-600 shadow-sm';
+        btnAnual.className = 'flex-1 py-3 px-6 text-sm font-bold rounded-xl transition-all duration-300 text-slate-500 hover:text-brand-600';
+        contentMensual.classList.remove('hidden');
+        contentAnual.classList.add('hidden');
+      } else {
+        btnAnual.className = 'flex-1 py-3 px-6 text-sm font-bold rounded-xl transition-all duration-300 bg-white text-brand-600 shadow-sm';
+        btnMensual.className = 'flex-1 py-3 px-6 text-sm font-bold rounded-xl transition-all duration-300 text-slate-500 hover:text-brand-600';
+        contentAnual.classList.remove('hidden');
+        contentMensual.classList.add('hidden');
+      }
+    }
+
+    window.switchTab = switchTab;
+
+    function updateCalcType() {
+      const isLiquido = document.getElementById('calc-toggle').checked;
+      const lblBruto = document.getElementById('lbl-bruto');
+      const lblLiquido = document.getElementById('lbl-liquido');
+      const inputLabel = document.getElementById('input-label');
+
+      if (isLiquido) {
+        lblLiquido.classList.remove('text-slate-400');
+        lblLiquido.classList.add('text-brand-900');
+        lblBruto.classList.remove('text-brand-900');
+        lblBruto.classList.add('text-slate-400');
+        inputLabel.innerText = "Monto Líquido a Recibir (Pagar)";
+      } else {
+        lblBruto.classList.remove('text-slate-400');
+        lblBruto.classList.add('text-brand-900');
+        lblLiquido.classList.remove('text-brand-900');
+        lblLiquido.classList.add('text-slate-400');
+        inputLabel.innerText = "Monto Bruto del Servicio";
+      }
+      calculateHonorarios();
+    }
+
+    window.updateCalcType = updateCalcType;
+
+    function calculateHonorarios() {
+      const input = document.getElementById('monto-input').value || 0;
+      const isLiquido = document.getElementById('calc-toggle').checked;
+
+      let bruto = 0;
+      let retencion = 0;
+      let liquido = 0;
+
+      if (isLiquido) {
+        bruto = Math.round(input / (1 - RETENCION_RATE));
+        retencion = bruto - input;
+        liquido = parseInt(input);
+      } else {
+        bruto = parseInt(input);
+        retencion = Math.round(bruto * RETENCION_RATE);
+        liquido = bruto - retencion;
+      }
+
+      document.getElementById('res-bruto').innerText = `$ ${bruto.toLocaleString('es-CL')}`;
+      document.getElementById('res-retencion').innerText = `$ ${retencion.toLocaleString('es-CL')}`;
+      document.getElementById('res-total').innerText = `$ ${liquido.toLocaleString('es-CL')}`;
+    }
+
+    window.calculateHonorarios = calculateHonorarios;
+
+    // IVA Logic
+    function updateIVAType() {
+      const isTotal = document.getElementById('iva-toggle').checked;
+      const lblNeto = document.getElementById('lbl-neto');
+      const lblTotal = document.getElementById('lbl-total');
+      const inputLabel = document.getElementById('input-label-iva');
+      const resLblUno = document.getElementById('res-lbl-uno');
+      const resLblTotal = document.getElementById('res-lbl-total');
+
+      if (isTotal) {
+        lblTotal.classList.remove('text-slate-400');
+        lblTotal.classList.add('text-emerald-900');
+        lblNeto.classList.remove('text-emerald-900');
+        lblNeto.classList.add('text-slate-400');
+        inputLabel.innerText = "Monto Total (IVA Incluido)";
+        resLblUno.innerText = "Monto Neto Estimado";
+        resLblTotal.innerText = "Monto Total Inyectado";
+      } else {
+        lblNeto.classList.remove('text-slate-400');
+        lblNeto.classList.add('text-emerald-900');
+        lblTotal.classList.remove('text-emerald-900');
+        lblTotal.classList.add('text-slate-400');
+        inputLabel.innerText = "Monto Neto (CLP)";
+        resLblUno.innerText = "Monto Neto";
+        resLblTotal.innerText = "Monto Total Estimado";
+      }
+      calculateIVA();
+    }
+
+    window.updateIVAType = updateIVAType;
+
+    function calculateIVA() {
+      const input = document.getElementById('monto-iva-input').value || 0;
+      const isTotal = document.getElementById('iva-toggle').checked;
+
+      let neto = 0;
+      let iva = 0;
+      let total = 0;
+
+      if (isTotal) {
+        total = parseInt(input);
+        neto = Math.round(total / 1.19);
+        iva = total - neto;
+      } else {
+        neto = parseInt(input);
+        iva = Math.round(neto * 0.19);
+        total = neto + iva;
+      }
+
+      document.getElementById('res-iva-uno').innerText = `$ ${neto.toLocaleString('es-CL')}`;
+      document.getElementById('res-iva-dos').innerText = `$ ${iva.toLocaleString('es-CL')}`;
+      document.getElementById('res-iva-total').innerText = `$ ${total.toLocaleString('es-CL')}`;
+    }
+
+    window.calculateIVA = calculateIVA;
+  </script>
+</body>
+
+</html>
