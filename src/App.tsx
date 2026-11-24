@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { HashRouter, Route, Routes, useLocation } from 'react-router-dom';
+import { BrowserRouter, Navigate, Route, Routes, useLocation } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import WhatsAppFab from './components/WhatsAppFab';
@@ -27,14 +27,15 @@ function ScrollToTop() {
 
 export default function App() {
   return (
-    <HashRouter>
+    <BrowserRouter>
       <ScrollToTop />
       <div className="min-h-screen flex flex-col">
         <Navbar />
         <main className="flex-grow">
           <Routes>
             <Route path="/" element={<HomePage />} />
-            <Route path="/nosotros" element={<NosotrosPage />} />
+            <Route path="/sobre-mi" element={<NosotrosPage />} />
+            <Route path="/nosotros" element={<Navigate to="/sobre-mi" replace />} />
             <Route path="/herramientas" element={<HerramientasPage />} />
             <Route path="*" element={<HomePage />} />
           </Routes>
@@ -42,6 +43,6 @@ export default function App() {
         <Footer />
         <WhatsAppFab />
       </div>
-    </HashRouter>
+    </BrowserRouter>
   );
 }

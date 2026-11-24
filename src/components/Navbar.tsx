@@ -5,7 +5,7 @@ import { Menu, Sparkles, X } from 'lucide-react';
 const NAV_LINKS = [
   { label: 'Inicio', to: '/' },
   { label: 'Servicios', to: '/#servicios' },
-  { label: 'Nosotros', to: '/nosotros' },
+  { label: 'Sobre mí', to: '/sobre-mi' },
   { label: 'Herramientas', to: '/herramientas' },
   { label: 'Preguntas', to: '/#faq' },
 ];

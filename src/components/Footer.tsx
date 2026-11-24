@@ -48,7 +48,7 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link to="/nosotros" className="text-ivory-200 hover:text-white transition-colors">
+                <Link to="/sobre-mi" className="text-ivory-200 hover:text-white transition-colors">
                   Sobre Daniela Godoy
                 </Link>
               </li>

@@ -17,11 +17,11 @@ export default function NosotrosPage() {
               <div className="relative max-w-sm mx-auto lg:max-w-none group">
                 <div className="aspect-[3/4] overflow-hidden rounded-t-[10rem] rounded-b-[2rem] shadow-xl border-4 border-white bg-ivory-200">
                   <img
-                    src="/img/header_photo.webp"
+                    src="/img/hero_daniela.jpg"
                     alt={`${CONTACT.professionalName} - ${CONTACT.title}`}
                     loading="lazy"
                     decoding="async"
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                    className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700"
                   />
                 </div>
                 <div className="absolute -bottom-5 right-4 sm:-right-4 bg-white/95 backdrop-blur-md px-5 py-4 rounded-2xl shadow-lg border border-ivory-200 flex items-center gap-3.5">
